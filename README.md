@@ -10,8 +10,8 @@
 
 ## General requirements before running any specific project
 
-- `npm install` to install all the dependencies, React and React Native among others.
-- `bundle install` to install all the dependencies, React and React Native among others.
-- cd ios.
-- `pod install` to install all the dependencies, React and React Native among others.
+- `npm install` to install all the dependencies node_modules
+- `bundle install` to install all the dependencies of bundle
+- `cd ios` change directory to ios directory
+- `pod install` to install all the dependencies of pods
 - `npm start` to start the project

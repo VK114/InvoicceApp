@@ -14,19 +14,12 @@ A demo for the Website App is available [here](http://benoitvallon.github.io/rea
 
 ### Mobile Apps (iOS & Android)
 
-![Mobile Apps](images/mobile-apps.png "Mobile Apps")
-
-### Desktop Apps (NW & Electron)
-
-![Desktop App](images/desktop-apps.png "Desktop App")
-
-### Website App
-
-![Website App](images/website-app.png "Website App")
+![Mobile Apps](images/1.png "Mobile Apps")
 
 ## Libraries/tools
 
 This project uses libraries and tools like:
+
 - es6 syntax and [babel](https://babeljs.io)
 - [react](https://facebook.github.io/react) for the Website App and Desktop App,
 - [react-native](https://facebook.github.io/react-native) for the iOS & Android Apps
@@ -40,6 +33,7 @@ This project uses libraries and tools like:
 ## Basic philosophy
 
 All the code is contained in the `src` directory, especially the 3 main entry files that are used for the builds:
+
 - `index.ios.js` & `index.android.js` are the ones used to build the iOS & Android Apps
 - `index.js` is the one used to build the Website App and Desktop App as the code is strictly the same.
 
@@ -69,17 +63,17 @@ Screen.js
 And here is the main `Class` file which composes the files.
 
 ```js
-'use strict';
+"use strict";
 
-import Base from './ScreenBase';
-import Render from './ScreenRender';
+import Base from "./ScreenBase";
+import Render from "./ScreenRender";
 
 export default class Screen extends Base {
-  constructor (props) {
+  constructor(props) {
     super(props);
   }
 
-  render () {
+  render() {
     return Render.call(this, this.props, this.state);
   }
 }
